@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVF Success Rate Result</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-text">iVF Pulse</span>
+      <div class="logo-subtext">
+        <a href="#">Home</a> / <a href="#">IVF Success Rate Calculator</a> / <a href="#">Result</a>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Donor Programme</a>
+      <a href="#">Fertility Preservation</a>
+      <a href="#">Advanced Treatments</a>
+      <a href="#">Infertility Treatments</a>
+      <a href="#">IVF Testing</a>
+      <a href="#">About Us</a>
+    </nav>
+    <button class="talk-to-us">Talk to Us →</button>
+  </header>
+
+  <!-- Result Screen -->
+  <main class="result-container">
+    <div class="result-content">
+      <h1>Your estimated IVF Success Rate is</h1>
+      <div class="result-circle">
+        <span class="result-percentage" id="result-percentage">0%</span>
+      </div>
+      <p id="result-description">With 0 IVF Cycle</p>
+    </div>
+    <div class="result-image">
+      <img src="family-image.png" alt="Happy Family">
+    </div>
+  </main>
+
+  <script>
+    // Get the parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const percentage = urlParams.get('percentage');
+    const cycles = urlParams.get('cycles');
+
+    // Update the result page dynamically
+    document.getElementById('result-percentage').textContent = `${percentage}%`;
+    document.getElementById('result-description').textContent = `With ${cycles} IVF Cycle${cycles > 1 ? 's' : ''}`;
+  </script>
+</body>
+</html>

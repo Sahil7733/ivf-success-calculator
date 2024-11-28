@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVF Success Rate Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-text">iVF Pulse</span>
+      <div class="logo-subtext">
+        <a href="#">Home</a> / <a href="#">IVF Success Rate Calculator</a>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Donor Programme</a>
+      <a href="#">Fertility Preservation</a>
+      <a href="#">Advanced Treatments</a>
+      <a href="#">Infertility Treatments</a>
+      <a href="#">IVF Testing</a>
+      <a href="#">About Us</a>
+    </nav>
+    <button class="talk-to-us">Talk to Us →</button>
+  </header>
+
+  <!-- Input Screen -->
+  <main class="input-container">
+    <form id="input-form" class="input-form">
+      <h2>Which age range applies to you?</h2>
+      <div class="radio-group">
+        <label><input type="radio" name="age" value="under30"> Under 30</label>
+        <label><input type="radio" name="age" value="30-34" > Between 30 - 34</label>
+        <label><input type="radio" name="age" value="35-37"> Between 35 - 37</label>
+        <label><input type="radio" name="age" value="38-40"> Between 38 - 40</label>
+        <label><input type="radio" name="age" value="41-43"> Between 41 - 43</label>
+        <label><input type="radio" name="age" value="above43"> Above 43</label>
+      </div>
+
+      <h2>Number of IVF Cycles?</h2>
+      <div class="slider-group">
+        <input type="range" id="cycle-slider" min="1" max="4" step="1" value="1">
+        <span class="slider-value" id="cycle-value">1</span>
+      </div>
+
+      <h2>Have you undergone these procedures before?</h2>
+      <div class="radio-group">
+        <label>ICSI Procedure: <input type="radio" name="icsi" value="yes"> Yes <input type="radio" name="icsi" value="no"> No</label>
+        <label>PGT Testing: <input type="radio" name="pgt" value="yes"> Yes <input type="radio" name="pgt" value="no"> No</label>
+      </div>
+
+      <h2>Do you have any of these medical conditions?</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="condition" value="pcos"> PCOS</label>
+        <label><input type="checkbox" name="condition" value="endometriosis" > Endometriosis</label>
+        <label><input type="checkbox" name="condition" value="low_reserve"> Low Ovarian Reserve</label>
+        <label><input type="checkbox" name="condition" value="male_infertility"> Male Factor Infertility</label>
+      </div>
+
+      <button type="button" class="calculate-button" id="calculate-btn">Calculate</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

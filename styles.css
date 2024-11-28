@@ -1,0 +1,126 @@
+/* General reset */
+body, h1, h2, p, a, input, button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefaf4;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  flex-direction: row;
+  color: #000;
+}
+
+.logo-subtext a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.talk-to-us {
+  background-color: #f26d5b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-container, .result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  padding: 20px;
+}
+
+.input-form, .result-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+h2, h1 {
+  margin-bottom: 20px;
+}
+
+.slider-group input {
+  width: 60%;
+  color: orange;
+}
+
+.slider-value {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
+
+.calculate-button {
+  background-color: #f26d5b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-container {
+  background-color: #000;
+  color: white;
+}
+
+.result-circle {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #32CD32, #228B22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.result-image img {
+  max-width: 300px;
+  border-radius: 10px;
+}
